@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1E8F69861E955F65000D4C83 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F69851E955F65000D4C83 /* main.cpp */; };
+		1E8F69921E955FED000D4C83 /* CNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F69901E955FED000D4C83 /* CNode.cpp */; };
+		1E8F69951E956031000D4C83 /* SimpleList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F69931E956031000D4C83 /* SimpleList.cpp */; };
+		1E8F69981E957398000D4C83 /* DoubleList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F69961E957398000D4C83 /* DoubleList.cpp */; };
+		1E8F699B1E9575FC000D4C83 /* CircularSimpleList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F69991E9575FC000D4C83 /* CircularSimpleList.cpp */; };
+		1E8F699E1E959AB6000D4C83 /* CircularDoubleList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F699C1E959AB6000D4C83 /* CircularDoubleList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,16 @@
 /* Begin PBXFileReference section */
 		1E8F69821E955F65000D4C83 /* DataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E8F69851E955F65000D4C83 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1E8F69901E955FED000D4C83 /* CNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CNode.cpp; sourceTree = "<group>"; };
+		1E8F69911E955FED000D4C83 /* CNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CNode.hpp; sourceTree = "<group>"; };
+		1E8F69931E956031000D4C83 /* SimpleList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleList.cpp; sourceTree = "<group>"; };
+		1E8F69941E956031000D4C83 /* SimpleList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SimpleList.hpp; sourceTree = "<group>"; };
+		1E8F69961E957398000D4C83 /* DoubleList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleList.cpp; sourceTree = "<group>"; };
+		1E8F69971E957398000D4C83 /* DoubleList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DoubleList.hpp; sourceTree = "<group>"; };
+		1E8F69991E9575FC000D4C83 /* CircularSimpleList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircularSimpleList.cpp; sourceTree = "<group>"; };
+		1E8F699A1E9575FC000D4C83 /* CircularSimpleList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircularSimpleList.hpp; sourceTree = "<group>"; };
+		1E8F699C1E959AB6000D4C83 /* CircularDoubleList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircularDoubleList.cpp; sourceTree = "<group>"; };
+		1E8F699D1E959AB6000D4C83 /* CircularDoubleList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircularDoubleList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +72,27 @@
 		1E8F69841E955F65000D4C83 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				1E8F698C1E955F7D000D4C83 /* Dto */,
 				1E8F69851E955F65000D4C83 /* main.cpp */,
 			);
 			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		1E8F698C1E955F7D000D4C83 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				1E8F69901E955FED000D4C83 /* CNode.cpp */,
+				1E8F69911E955FED000D4C83 /* CNode.hpp */,
+				1E8F69931E956031000D4C83 /* SimpleList.cpp */,
+				1E8F69941E956031000D4C83 /* SimpleList.hpp */,
+				1E8F69961E957398000D4C83 /* DoubleList.cpp */,
+				1E8F69971E957398000D4C83 /* DoubleList.hpp */,
+				1E8F69991E9575FC000D4C83 /* CircularSimpleList.cpp */,
+				1E8F699A1E9575FC000D4C83 /* CircularSimpleList.hpp */,
+				1E8F699C1E959AB6000D4C83 /* CircularDoubleList.cpp */,
+				1E8F699D1E959AB6000D4C83 /* CircularDoubleList.hpp */,
+			);
+			name = Dto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +154,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E8F69861E955F65000D4C83 /* main.cpp in Sources */,
+				1E8F69921E955FED000D4C83 /* CNode.cpp in Sources */,
+				1E8F69981E957398000D4C83 /* DoubleList.cpp in Sources */,
+				1E8F69951E956031000D4C83 /* SimpleList.cpp in Sources */,
+				1E8F699B1E9575FC000D4C83 /* CircularSimpleList.cpp in Sources */,
+				1E8F699E1E959AB6000D4C83 /* CircularDoubleList.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
