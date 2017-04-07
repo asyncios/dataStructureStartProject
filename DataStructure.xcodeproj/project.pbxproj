@@ -15,6 +15,9 @@
 		1E8F699E1E959AB6000D4C83 /* CircularDoubleList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F699C1E959AB6000D4C83 /* CircularDoubleList.cpp */; };
 		1E8F69A21E96993F000D4C83 /* CTreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F69A01E96993F000D4C83 /* CTreeNode.cpp */; };
 		1E8F69A51E9699C4000D4C83 /* CBSTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F69A31E9699C4000D4C83 /* CBSTree.cpp */; };
+		9403C0351E975CB8001C69AE /* CStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9403C0331E975CB8001C69AE /* CStack.cpp */; };
+		9403C0381E975CFE001C69AE /* COtherNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9403C0361E975CFE001C69AE /* COtherNode.cpp */; };
+		9403C03B1E97628F001C69AE /* CQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9403C0391E97628F001C69AE /* CQueue.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +49,12 @@
 		1E8F69A11E96993F000D4C83 /* CTreeNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CTreeNode.hpp; sourceTree = "<group>"; };
 		1E8F69A31E9699C4000D4C83 /* CBSTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBSTree.cpp; sourceTree = "<group>"; };
 		1E8F69A41E9699C4000D4C83 /* CBSTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CBSTree.hpp; sourceTree = "<group>"; };
+		9403C0331E975CB8001C69AE /* CStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CStack.cpp; sourceTree = "<group>"; };
+		9403C0341E975CB8001C69AE /* CStack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CStack.hpp; sourceTree = "<group>"; };
+		9403C0361E975CFE001C69AE /* COtherNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = COtherNode.cpp; sourceTree = "<group>"; };
+		9403C0371E975CFE001C69AE /* COtherNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = COtherNode.hpp; sourceTree = "<group>"; };
+		9403C0391E97628F001C69AE /* CQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CQueue.cpp; sourceTree = "<group>"; };
+		9403C03A1E97628F001C69AE /* CQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CQueue.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +87,10 @@
 		1E8F69841E955F65000D4C83 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
-				1E8F699F1E9698CF000D4C83 /* Tree */,
-				1E8F698C1E955F7D000D4C83 /* List */,
 				1E8F69851E955F65000D4C83 /* main.cpp */,
+				1E8F698C1E955F7D000D4C83 /* List */,
+				9403C0321E975C75001C69AE /* StackQueue */,
+				1E8F699F1E9698CF000D4C83 /* Tree */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -111,6 +121,19 @@
 				1E8F69A41E9699C4000D4C83 /* CBSTree.hpp */,
 			);
 			name = Tree;
+			sourceTree = "<group>";
+		};
+		9403C0321E975C75001C69AE /* StackQueue */ = {
+			isa = PBXGroup;
+			children = (
+				9403C0331E975CB8001C69AE /* CStack.cpp */,
+				9403C0341E975CB8001C69AE /* CStack.hpp */,
+				9403C0361E975CFE001C69AE /* COtherNode.cpp */,
+				9403C0371E975CFE001C69AE /* COtherNode.hpp */,
+				9403C0391E97628F001C69AE /* CQueue.cpp */,
+				9403C03A1E97628F001C69AE /* CQueue.hpp */,
+			);
+			name = StackQueue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,10 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9403C0381E975CFE001C69AE /* COtherNode.cpp in Sources */,
 				1E8F69861E955F65000D4C83 /* main.cpp in Sources */,
 				1E8F69921E955FED000D4C83 /* CNode.cpp in Sources */,
 				1E8F69981E957398000D4C83 /* DoubleList.cpp in Sources */,
+				9403C03B1E97628F001C69AE /* CQueue.cpp in Sources */,
 				1E8F69951E956031000D4C83 /* SimpleList.cpp in Sources */,
+				9403C0351E975CB8001C69AE /* CStack.cpp in Sources */,
 				1E8F69A51E9699C4000D4C83 /* CBSTree.cpp in Sources */,
 				1E8F69A21E96993F000D4C83 /* CTreeNode.cpp in Sources */,
 				1E8F699B1E9575FC000D4C83 /* CircularSimpleList.cpp in Sources */,
@@ -309,6 +335,7 @@
 				1E8F698B1E955F65000D4C83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

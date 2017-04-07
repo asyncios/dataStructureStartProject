@@ -32,6 +32,41 @@ private:
             return _searchvalue(node->right, value);
         }
     }
+    void _printPreOrder(CTreeNode* node)
+    {
+        if (node == NULL)
+        {
+            return;
+        }
+        
+        printf("%d ", node->value);
+        _printPreOrder(node->left);
+        _printPreOrder(node->right);
+    }
+    
+    void _printInOrder(CTreeNode* node)
+    {
+        if (node == NULL)
+        {
+            return;
+        }
+        
+        _printInOrder(node->left);
+        printf("%d ", node->value);
+        _printInOrder(node->right);
+    }
+    
+    void _printPostOrder(CTreeNode* node)
+    {
+        if (node == NULL)
+        {
+            return;
+        }
+        
+        _printPostOrder(node->left);
+        _printPostOrder(node->right);
+        printf("%d ", node->value);
+    }
 public:
     void addvalue(int value)
     {
@@ -84,7 +119,10 @@ public:
         return _searchvalue(root, value);
     }
     
-    
+    void printTree()
+    {
+        _printPostOrder(root);
+    }
     
 };
 

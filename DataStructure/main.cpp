@@ -12,6 +12,8 @@
 #include "CircularSimpleList.hpp"
 #include "CircularDoubleList.hpp"
 #include "CBSTree.hpp"
+#include "CStack.cpp"
+#include "CQueue.hpp"
 
 using namespace std;
 
@@ -69,8 +71,39 @@ void callCBSTree()
     tree->addvalue(3);
     tree->addvalue(30);
     tree->addvalue(121);
-    
+    tree->printTree();
     tree->searchvalue(25);
+}
+
+void callCStack()
+{
+    CStack* stack = new CStack();
+    stack->push(4);
+    stack->push(120);
+    stack->push(300);
+    stack->push(500);
+    int value;
+    value = stack->top();
+    printf("%d ",value);
+    stack->pop();
+    
+    value = stack->top();
+    printf("%d ",value);
+}
+
+void callCQueue()
+{
+    CQueue* queue = new CQueue();
+    queue->push(4);
+    queue->push(120);
+    queue->push(300);
+    queue->push(500);
+    int value;
+    value = queue->top();
+    printf("%d ",value);
+    queue->pop();
+    value = queue->top();
+    printf("%d ",value);
 }
 
 int main(int argc, const char * argv[]) {
@@ -79,6 +112,8 @@ int main(int argc, const char * argv[]) {
     //callSimpleList();
     //callCircularSimpleList();
     //callCircularDoubleList();
-    callCBSTree();
+    //callCBSTree();
+    //callCStack();
+    callCQueue();
     return 0;
 }
