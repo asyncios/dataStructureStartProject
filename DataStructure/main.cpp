@@ -11,7 +11,7 @@
 #include "DoubleList.hpp"
 #include "CircularSimpleList.hpp"
 #include "CircularDoubleList.hpp"
-#include <list>
+#include "CBSTree.hpp"
 
 using namespace std;
 
@@ -59,15 +59,26 @@ void callCircularDoubleList()
     list->printReverseLoopCircularList(30);
 }
 
+void callCBSTree()
+{
+    CBSTree* tree = new CBSTree();
+    tree->addvalue(10);
+    tree->addvalue(1);
+    tree->addvalue(24);
+    tree->addvalue(5);
+    tree->addvalue(3);
+    tree->addvalue(30);
+    tree->addvalue(121);
+    
+    tree->searchvalue(25);
+}
+
 int main(int argc, const char * argv[]) {
-    
-    list<int> *lista;
-    lista = new list<int>();
-    
     // insert code here...
     std::cout << "Hello, World!\n";
-    callSimpleList();
+    //callSimpleList();
     //callCircularSimpleList();
     //callCircularDoubleList();
+    callCBSTree();
     return 0;
 }

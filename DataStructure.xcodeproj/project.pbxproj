@@ -13,6 +13,8 @@
 		1E8F69981E957398000D4C83 /* DoubleList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F69961E957398000D4C83 /* DoubleList.cpp */; };
 		1E8F699B1E9575FC000D4C83 /* CircularSimpleList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F69991E9575FC000D4C83 /* CircularSimpleList.cpp */; };
 		1E8F699E1E959AB6000D4C83 /* CircularDoubleList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F699C1E959AB6000D4C83 /* CircularDoubleList.cpp */; };
+		1E8F69A21E96993F000D4C83 /* CTreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F69A01E96993F000D4C83 /* CTreeNode.cpp */; };
+		1E8F69A51E9699C4000D4C83 /* CBSTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E8F69A31E9699C4000D4C83 /* CBSTree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +42,10 @@
 		1E8F699A1E9575FC000D4C83 /* CircularSimpleList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircularSimpleList.hpp; sourceTree = "<group>"; };
 		1E8F699C1E959AB6000D4C83 /* CircularDoubleList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircularDoubleList.cpp; sourceTree = "<group>"; };
 		1E8F699D1E959AB6000D4C83 /* CircularDoubleList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircularDoubleList.hpp; sourceTree = "<group>"; };
+		1E8F69A01E96993F000D4C83 /* CTreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTreeNode.cpp; sourceTree = "<group>"; };
+		1E8F69A11E96993F000D4C83 /* CTreeNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CTreeNode.hpp; sourceTree = "<group>"; };
+		1E8F69A31E9699C4000D4C83 /* CBSTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBSTree.cpp; sourceTree = "<group>"; };
+		1E8F69A41E9699C4000D4C83 /* CBSTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CBSTree.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +78,14 @@
 		1E8F69841E955F65000D4C83 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
-				1E8F698C1E955F7D000D4C83 /* Dto */,
+				1E8F699F1E9698CF000D4C83 /* Tree */,
+				1E8F698C1E955F7D000D4C83 /* List */,
 				1E8F69851E955F65000D4C83 /* main.cpp */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
 		};
-		1E8F698C1E955F7D000D4C83 /* Dto */ = {
+		1E8F698C1E955F7D000D4C83 /* List */ = {
 			isa = PBXGroup;
 			children = (
 				1E8F69901E955FED000D4C83 /* CNode.cpp */,
@@ -92,7 +99,18 @@
 				1E8F699C1E959AB6000D4C83 /* CircularDoubleList.cpp */,
 				1E8F699D1E959AB6000D4C83 /* CircularDoubleList.hpp */,
 			);
-			name = Dto;
+			name = List;
+			sourceTree = "<group>";
+		};
+		1E8F699F1E9698CF000D4C83 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				1E8F69A01E96993F000D4C83 /* CTreeNode.cpp */,
+				1E8F69A11E96993F000D4C83 /* CTreeNode.hpp */,
+				1E8F69A31E9699C4000D4C83 /* CBSTree.cpp */,
+				1E8F69A41E9699C4000D4C83 /* CBSTree.hpp */,
+			);
+			name = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +175,8 @@
 				1E8F69921E955FED000D4C83 /* CNode.cpp in Sources */,
 				1E8F69981E957398000D4C83 /* DoubleList.cpp in Sources */,
 				1E8F69951E956031000D4C83 /* SimpleList.cpp in Sources */,
+				1E8F69A51E9699C4000D4C83 /* CBSTree.cpp in Sources */,
+				1E8F69A21E96993F000D4C83 /* CTreeNode.cpp in Sources */,
 				1E8F699B1E9575FC000D4C83 /* CircularSimpleList.cpp in Sources */,
 				1E8F699E1E959AB6000D4C83 /* CircularDoubleList.cpp in Sources */,
 			);
